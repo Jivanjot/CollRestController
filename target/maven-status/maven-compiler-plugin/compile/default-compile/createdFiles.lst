@@ -1,0 +1,5 @@
+com\collaboration\controller\UserController.class
+com\collaboration\webconfig\WebInitializer.class
+com\collaboration\controller\JobController.class
+com\collaboration\webconfig\WebSocketConfig.class
+com\collaboration\webconfig\WebResolver.class
