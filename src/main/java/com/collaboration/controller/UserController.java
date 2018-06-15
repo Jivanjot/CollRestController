@@ -49,6 +49,7 @@ public class UserController {
 		boolean a=userDao.checkCredential(user.getLoginName(), user.getPassword());
 		if(a==true)
 		{
+            session.setAttribute("loginName",user.getLoginName());		
 			User tempUser=userDao.getUser(user.getLoginName());
            session.setAttribute("user",tempUser);	
            return new ResponseEntity<User>(tempUser,HttpStatus.ACCEPTED);
